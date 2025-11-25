@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+*{
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+p,button,h4{
+    font-family: "DM Sans", sans-serif;
+}
+
+body, html {
+    overflow-x: hidden;
+}
