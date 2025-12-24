@@ -18,6 +18,13 @@ import { FaPython } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
+import { SiFirebase } from "react-icons/si";
+import { SiAxios } from "react-icons/si";
+import { SiExpo } from "react-icons/si";
+import { SiStreamlit } from "react-icons/si";
+import { SiGooglegemini } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { DiCss3 } from "react-icons/di";
 
 
 function AboutPage() {
@@ -42,6 +49,68 @@ function AboutPage() {
     { name: 'Postman', icon: <SiPostman />, color: 'text-orange-400' },
     { name: 'Java', icon: <FaJava />, color: 'text-red-500' },
     { name: 'Python', icon: <FaPython />, color: 'text-blue-400' },
+  ]
+
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      skills: [
+        { name: "Java", icon: <FaJava />, color: "text-red-500" },
+        { name: "JavaScript (ES6+)", icon: <IoLogoJavascript />, color: "text-yellow-400" },
+        { name: "Python", icon: <FaPython />, color: "text-blue-400" }
+      ]
+    },
+    {
+      title: "Frontend",
+      skills: [
+        { name: "React.js", icon: <SiReact />, color: "text-cyan-400" },
+        { name: "React Native", icon: <SiReact />, color: "text-cyan-500" },
+        { name: "HTML5", icon: <FaHtml5 />, color: "text-orange-500" },
+        { name: "CSS3", icon: <FaCss3Alt />, color: "text-blue-500" },
+        { name: "Tailwind CSS", icon: <RiTailwindCssFill />, color: "text-cyan-400" },
+        { name: "Redux", icon: <SiRedux />, color: "text-purple-500" },
+        { name: "GSAP", icon: "◈", color: "text-green-400" }
+      ]
+    },
+    {
+      title: "Backend",
+      skills: [
+        { name: "Node.js", icon: <FaNodeJs />, color: "text-green-500" },
+        { name: "Express.js", icon: <SiExpress />, color: "text-gray-400" },
+        { name: "REST APIs", icon: <TbApi />, color: "text-blue-400" },
+        { name: "Socket.IO", icon: <SiSocketdotio />, color: "text-white" },
+        { name: "Firebase Auth", icon: <SiFirebase />, color: "text-yellow-500" },
+        { name: "Firestore", icon: <SiFirebase />, color: "text-orange-500" },
+        { name: "Cloud Functions", icon: <SiFirebase />, color: "text-yellow-400" }
+      ]
+    },
+    {
+      title: "Databases",
+      skills: [
+        { name: "MongoDB", icon: <SiMongodb />, color: "text-green-400" },
+        { name: "Firebase Firestore", icon: <SiFirebase />, color: "text-orange-500" }
+      ]
+    },
+    {
+      title: "Tools",
+      skills: [
+        { name: "Git", icon: <FaGitAlt />, color: "text-orange-500" },
+        { name: "GitHub", icon: <FaGithub />, color: "text-white" },
+        { name: "Postman", icon: <SiPostman />, color: "text-orange-400" },
+        { name: "Axios", icon: <SiAxios />, color: "text-purple-400" },
+        { name: "Expo", icon: <SiExpo />, color: "text-white" },
+        { name: "Razorpay", icon: "₹", color: "text-blue-500" }
+      ]
+    },
+    {
+      title: "AI",
+      skills: [
+        { name: "Streamlit", icon: <SiStreamlit />, color: "text-red-500" },
+        { name: "Python", icon: <FaPython />, color: "text-blue-400" },
+        { name: "Google Gemini", icon: <SiGooglegemini />, color: "text-blue-500" },
+        { name: "LiteLLM", icon: "⚡", color: "text-yellow-400" }
+      ]
+    }
   ]
 
   return (
@@ -74,31 +143,38 @@ function AboutPage() {
         {/* Description */}
         <div className='mb-12 max-w-4xl'>
           <p className='text-gray-300 text-base sm:text-lg mb-4'>
-            I'm Mitul Patil — a passionate MERN Full-Stack Developer who enjoys blending creativity with engineering. I build digital experiences that are fast, intuitive, and meaningful. With expertise in React, Tailwind, Node.js, MongoDB, Socket.IO, and WebRTC, I love working on real-time applications, performance optimization, and modern UI/UX interactions. My goal is simple: create web solutions that feel great to use and work flawlessly behind the scenes.
+            I am a Full-Stack Developer with hands-on experience in building scalable web and mobile applications using the MERN stack and React Native. I specialize in developing clean user interfaces, efficient backend systems, and real-time features. My experience includes authentication, REST APIs, real-time communication, payment integration, and cloud services, with a strong focus on maintainable code and performance.
           </p>
         </div>
 
-        {/* Tools Section */}
-        <div className='mb-8'>
-          <h2 className='text-xl sm:text-2xl md:text-2xl mb-6'>
-            Tools
+        {/* Skills & Technologies Section */}
+        <div className='mb-12'>
+          <h2 className='text-xl sm:text-2xl md:text-2xl mb-8'>
+            Skills & Technologies
           </h2>
-          <p className='text-gray-300 text-base sm:text-lg mb-8 max-w-4xl'>
-            My primary stack includes React, Tailwindcss & JavaScript (React + JavaScript on the front-end and Express/Nodejs on the back-end). I have listed some of the languages/tools I have used or still use below.
-          </p>
-        </div>
-
-        {/* Tools Grid */}
-        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl'>
-          {tools.map((tool, index) => (
-            <div 
-              key={index} 
-              className='flex items-center gap-3 hover:scale-105 transition-transform'
-            >
-              <span className={`text-2xl ${tool.color}`}>{tool.icon}</span>
-              <span className='text-base text-gray-300'>{tool.name}</span>
-            </div>
-          ))}
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl'>
+            {skillCategories.map((category, categoryIndex) => (
+              <div key={categoryIndex} className='bg-zinc-900/50 border border-zinc-800 rounded-xl p-6'>
+                {/* Category Title */}
+                <h3 className='text-lg font-semibold mb-6 text-purple-400'>
+                  {category.title}
+                </h3>
+                
+                {/* Skills Grid with Icons */}
+                <div className='space-y-4'>
+                  {category.skills.map((skill, skillIndex) => (
+                    <div
+                      key={skillIndex}
+                      className='flex items-center gap-3 hover:scale-105 transition-transform'
+                    >
+                      <span className={`text-2xl ${skill.color}`}>{skill.icon}</span>
+                      <span className='text-base text-gray-300'>{skill.name}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
