@@ -60,12 +60,13 @@ function AllProjects() {
     },
     {
       id: 6,
-      title: "Fitness Tracker",
-      details: "A fitness tracking application with workout logging, progress tracking, and nutrition planning. Features data visualization and goal setting capabilities.",
-      image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&auto=format&fit=crop&q=60",
+      title: "Mr.Dhobi - Laundry Service",
+      details: "Mr. Dhobi is a modern on-demand laundry solution designed to streamline the entire workflow—from booking and pickup to delivery and payment—using real-time data synchronization and a centralized admin dashboard.",
+      technologies: ["React Native (Expo)","TypeScript", "Firebase", "Razorpay"],
+      image: "/projects/mrdhobi.png",
+      githubLink: "https://github.com/Omkumar7Parmar/Mr.Dhobi-otp-payment",  
+      projectLink: "https://play.google.com/store/apps/details?id=com.omkumar_78.mrdhobi&pcampaignid=web_share",
       category: "mobile",
-      githubLink: "https://github.com/MitulPatil/ChatApp",  
-      projectLink: "https://webrtc-chatapp.onrender.com/"
     }
   ]
 
