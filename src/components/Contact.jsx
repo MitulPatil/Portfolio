@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import emailjs from '@emailjs/browser'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ function Contact() {
     email: '',
     message: ''
   })
+  const [isLoading, setIsLoading] = useState(false)
+  const [status, setStatus] = useState({ type: '', message: '' })
 
   const handleChange = (e) => {
     setFormData({
@@ -16,9 +19,40 @@ function Contact() {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
+    setIsLoading(true)
+    setStatus({ type: '', message: '' })
+
+    try {
+      const result = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+
+      console.log('Email sent successfully:', result)
+      setStatus({
+        type: 'success',
+        message: 'Message sent successfully! I\'ll get back to you soon.'
+      })
+      
+      // Clear form
+      setFormData({ name: '', email: '', message: '' })
+    } catch (error) {
+      console.error('Email sending failed:', error)
+      setStatus({
+        type: 'error',
+        message: 'Failed to send message. Please try again or email me directly.'
+      })
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -92,7 +126,7 @@ function Contact() {
 
           {/* Contact Form */}
           <div className="bg-gray-900 rounded-2xl p-8 border border-gray-800">
-            <h2 className="text-3xl mb-8">Send a Message</h2>
+            <h2 className="text-xl mb-8">Send a Message</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name Input */}
@@ -148,10 +182,22 @@ function Contact() {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-500 hover:to-purple-600 text-white py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 flex items-center justify-center space-x-2"
+                disabled={isLoading}
+                className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-500 hover:to-purple-600 text-white py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 flex items-center justify-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-              <span>Send Message</span>
+              <span>{isLoading ? 'Sending...' : 'Send Message'}</span>
               </button>
+
+              {/* Status Message */}
+              {status.message && (
+                <div className={`p-4 rounded-lg text-center ${
+                  status.type === 'success' 
+                    ? 'bg-green-500/20 text-green-400 border border-green-500/50' 
+                    : 'bg-red-500/20 text-red-400 border border-red-500/50'
+                }`}>
+                  {status.message}
+                </div>
+              )}
             </form>
           </div>
         </div>
