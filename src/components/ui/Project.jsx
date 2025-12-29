@@ -20,6 +20,8 @@ function Project({ title = "title", details, image, githubLink, projectLink, tec
           src={image || "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60"} 
           alt={title}
           className='w-full h-full object-cover'
+          loading="lazy"
+          decoding="async"
         />
       </div>
       

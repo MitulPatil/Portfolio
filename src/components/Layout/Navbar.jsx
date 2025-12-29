@@ -29,22 +29,14 @@ function Navbar({ noAnimation = false }) {
         opacity: 0
       })
       
-      // Create entrance animation timeline
-      const tl = gsap.timeline({ delay: 0.2 })
-      
-      // Animate elements one by one from top
-      tl.to(name, {
+      // Animate both elements simultaneously without timeline
+      gsap.to([name, menu], {
         y: 0,
         opacity: 1,
         duration: 0.7,
+        delay: 0.2,
         ease: "power2.out"
       })
-      .to(menu, {
-        y: 0,
-        opacity: 1,
-        duration: 0.7,
-        ease: "power2.out"
-      }, 0.5) // Start 0.5s after name
     }
   }, [noAnimation])
 
@@ -70,13 +62,15 @@ function Navbar({ noAnimation = false }) {
             {/* Navbar */}
             <div className='p-5 sm:p-5 flex items-center justify-between uppercase relative z-50 text-white'>
                 <h1 ref={nameRef} className="sm:ml-6 md:ml-10 font-thin text-lg sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl text-white">Mitul Patil</h1>
-                <div 
+                <button 
                     ref={menuRef}
                     className='mr-2 sm:mr-6 md:mr-10 font-inter text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl cursor-pointer text-white'
                     onClick={toggleMenu}
+                    aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                    aria-expanded={isMenuOpen}
                 >
                     {isMenuOpen ? <VscClose /> : <VscMenu />}
-                </div>
+                </button>
             </div>
 
             {/* Menu Overlay */}

@@ -52,7 +52,7 @@ function About() {
         About Me
       </h1>
       
-      <div className='max-w-full lg:max-w-4xl'>
+      <div className='max-w-full lg:max-w-4xl text-gray-400'>
         <div className=''>
           <p ref={addToRefs} className='text-base sm:text-lg md:text-xl lg:text-2xl font-thin'>
             I'm a full-stack software engineer with a primary focus on front-end development.

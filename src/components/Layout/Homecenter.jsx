@@ -38,33 +38,33 @@ function Homecenter() {
       })
       
       // Create entrance animation timeline with delay to come after navbar
-      const tl = gsap.timeline({ delay: 1.5 }) // Start after navbar finishes
+      const tl = gsap.timeline({ delay: 1 }) // Wait for navbar animation to complete first
       
       // Animate elements one by one from top
       tl.to(fullStack, {
         y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.out"
+        duration: 0.8,
+        ease: "power3.out"
       })
       .to(developer, {
         y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.out"
-      }, 0.3) // Start 0.5s after fullStack
+        duration: 0.8,
+        ease: "power3.out"
+      }, 0.5) // Start 0.5s after fullStack
       .to(paragraph, {
         y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.out"
-      }, 0.9) // Start 0.5s after developer
+        duration: 0.8,
+        ease: "power3.out"
+      }, 1) // Start 0.7s after developer
       .to(buttons, {
         y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.out"
-      }, 1.2) // Start 0.5s after paragraph
+        duration: 0.8,
+        ease: "power3.out"
+      }, 1.3) // Start 0.6s after paragraph
     }
   }, [])
 

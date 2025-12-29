@@ -10,7 +10,7 @@ function Projects() {
       title: "Mr.Dhobi - Laundry Service",
       details: "Mr. Dhobi is a modern on-demand laundry solution designed to streamline the entire workflow—from booking and pickup to delivery and payment—using real-time data synchronization and a centralized admin dashboard.",
       technologies: ["React Native (Expo)","TypeScript", "Firebase", "Razorpay"],
-      image: "/projects/mrdhobi.png",
+      image: "/projects/mrdhobi.webp",
       githubLink: "https://github.com/Omkumar7Parmar/Mr.Dhobi-otp-payment",  
       projectLink: "https://play.google.com/store/apps/details?id=com.omkumar_78.mrdhobi&pcampaignid=web_share"
     },
@@ -19,7 +19,7 @@ function Projects() {
       title: "Real-time Chat App",
       details: "This is a web application that enables users to engage in real-time text-based chat and initiate peer-to-peer 1-on-1 video calls. The application is built with Node.js, Express, and utilizes WebSockets (via Socket.IO) for real-time communication and WebRTC for direct video streaming between users.",
       technologies: ["React", "Node.js", "Express", "Socket.IO", "WebRTC", "Tailwind CSS"],
-      image: "/projects/chatapp.png",
+      image: "/projects/chatapp.webp",
       githubLink: "https://github.com/MitulPatil/ChatApp",  
       projectLink: "https://webrtc-chatapp.onrender.com/"
     },

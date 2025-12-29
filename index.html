@@ -3,16 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-    <title>Mitul-Portfolio</title>
     
-    <!-- Google Fonts -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Mitul Patil - Full Stack Developer specializing in React, Node.js, MongoDB, and modern web technologies. Creating user-friendly, visually appealing, and scalable web applications." />
+    <meta name="keywords" content="Mitul Patil, Full Stack Developer, React Developer, Node.js, MongoDB, Web Development, Portfolio, JavaScript, TypeScript, GSAP, React Native" />
+    <meta name="author" content="Mitul Patil" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mitul Patil - Full Stack Developer" />
+    <meta property="og:description" content="Creating web products that are user-friendly, visually appealing, and backed by scalable, reliable code." />
+    <meta property="og:image" content="/profile.jpg" />
+    <meta property="og:url" content="https://mitulpatil.com" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mitul Patil - Full Stack Developer" />
+    <meta name="twitter:description" content="Creating web products that are user-friendly, visually appealing, and backed by scalable, reliable code." />
+    <meta name="twitter:image" content="/profile.jpg" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mitulpatil.com" />
+    
+    <!-- DNS prefetch and preconnect for external resources -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <title>Mitul Patil - Full Stack Developer</title>
+    
+    <!-- Preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load fonts with display=swap for faster FCP/LCP -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mitul Patil",
+      "jobTitle": "Full Stack Developer",
+      "description": "Full Stack Developer specializing in React, Node.js, MongoDB, and modern web technologies",
+      "url": "https://mitulpatil.com",
+      "image": "https://mitulpatil.com/profile.jpg",
+      "sameAs": [
+        "https://github.com/MitulPatil",
+        "https://www.linkedin.com/in/mitulpatil"
+      ],
+      "knowsAbout": ["React", "Node.js", "JavaScript", "MongoDB", "Express.js", "React Native", "TypeScript", "GSAP", "Tailwind CSS"],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Your University"
+      }
+    }
+    </script>
   </body>
 </html>
