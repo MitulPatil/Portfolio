@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoArrowBack } from 'react-icons/io5'
-import Project from '../Components/UI/Project'
-import Navbar from '../Components/Layout/Navbar'
-import Footer from '../Components/Layout/Footer'
+import Project from '../components/ui/Project'
+import Navbar from '../components/Layout/Navbar'
+import Footer from '../components/Layout/Footer'
 
 function AllProjects() {
   const [selectedFilter, setSelectedFilter] = useState('all')

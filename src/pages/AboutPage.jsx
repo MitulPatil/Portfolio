@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { IoArrowBack } from 'react-icons/io5'
-import Navbar from '../Components/Layout/Navbar'
-import Footer from '../Components/Layout/Footer'
+import Navbar from '../components/Layout/Navbar'
+import Footer from '../components/Layout/Footer'
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";

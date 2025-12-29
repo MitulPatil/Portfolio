@@ -1,5 +1,5 @@
 import React from 'react'
-import SkillItem from './UI/SkillItem'
+import SkillItem from './ui/SkillItem'
 
 function Skills() {
   const skills = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODEJS", "MONGODB", "EXPRESSJS", "POSTMAN", "GSAP", "CSS-ANIMATION", 'SCROLL-TRIGGER','python', 'TAILWIND CSS','GIT', 'GITHUB','LLM INTEGRATION']

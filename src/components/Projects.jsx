@@ -1,6 +1,6 @@
 import React from 'react'
-import Project from './UI/Project'
-import Button from './UI/Button';
+import Project from './ui/Project'
+import Button from './ui/Button';
 
 
 function Projects() {
