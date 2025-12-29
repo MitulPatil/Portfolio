@@ -1,6 +1,13 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import ReactGA from 'react-ga4'
+
+// Initialize Google Analytics
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID
+if (GA_MEASUREMENT_ID) {
+  ReactGA.initialize(GA_MEASUREMENT_ID)
+}
 
 // Remove StrictMode in production for better performance
 createRoot(document.getElementById('root')).render(
