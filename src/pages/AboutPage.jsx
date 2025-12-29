@@ -99,7 +99,6 @@ function AboutPage() {
         { name: "Postman", icon: <SiPostman />, color: "text-orange-400" },
         { name: "Axios", icon: <SiAxios />, color: "text-purple-400" },
         { name: "Expo", icon: <SiExpo />, color: "text-white" },
-        { name: "Razorpay", icon: "₹", color: "text-blue-500" }
       ]
     },
     {

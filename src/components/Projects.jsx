@@ -9,7 +9,7 @@ function Projects() {
       id: 1,
       title: "Mr.Dhobi - Laundry Service",
       details: "Mr. Dhobi is a mobile laundry service application designed for Android and iOS that allows users to schedule laundry pickups, track orders in real time, and complete secure in-app payments. The app provides a smooth, user-friendly interface optimized for mobile devices and supports role-based access for customers, delivery agents, and admins.",
-      technologies: ["React Native (Expo)","TypeScript", "Firebase", "Razorpay"],
+      technologies: ["React Native", "Expo","TypeScript", "Firebase", "Razorpay"],
       image: "/projects/mrdhobi.webp",
       githubLink: "https://github.com/Omkumar7Parmar/Mr.Dhobi-otp-payment",  
       projectLink: "https://play.google.com/store/apps/details?id=com.omkumar_78.mrdhobi&pcampaignid=web_share"
@@ -19,7 +19,7 @@ function Projects() {
       title: "Car Rental",
       details: "Full-stack car rental platform with dual interfaces for car owners and customers. Built using React, Node.js, Express, and MongoDB with JWT authentication. Features include car listing management, real-time availability checking, booking system, owner dashboard with analytics, and ImageKit integration for optimized image uploads.",
       technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "REST API", "ImageKit"],
-      image: "/projects/chatapp.webp",
+      image: "/projects/carrental.webp",
       githubLink: "https://github.com/MitulPatil/CarRental",  
       projectLink: "https://car-rental-nine-liard.vercel.app/"
     },

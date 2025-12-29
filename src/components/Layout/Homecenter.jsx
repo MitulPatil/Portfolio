@@ -82,7 +82,7 @@ function Homecenter() {
         </div>
         <h4 className='text-sm sm:text-base md:text-lg lg:text-xl ml-4 sm:ml-8 md:ml-12 lg:ml-14 mt-7 sm:mt-6 md:mt-8 text-gray-400 sm:max-w-md md:max-w-lg lg:whitespace-nowrap lg:w-auto' ref={paragraphRef}>Creating web products that are user-friendly, visually appealing, and backed by scalable, reliable code.</h4>
         <div className='flex sm:flex-row items-start sm:items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8 ml-4 sm:ml-8 md:ml-12 lg:ml-14 mt-7 sm:mt-8 md:mt-10 mb-12 lg:mb-0 sm:mb-16 md:mb-20' ref={buttonsRef}>
-          <Button text={"Resume"} href="/resume.pdf" download="Mitul_Patil_Resume.pdf"/>
+          <Button text={"Resume"} href="/Mitul_Patil_Resume.pdf" download="Mitul_Patil_Resume.pdf"/>
           <Button text={"Browse Projects"} link="/projects"/>
         </div>
     </>

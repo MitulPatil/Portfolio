@@ -17,7 +17,7 @@ function AllProjects() {
       id: 1,
       title: "Mr.Dhobi - Laundry Service",
       details: "Mr. Dhobi is a mobile laundry service application designed for Android and iOS that allows users to schedule laundry pickups, track orders in real time, and complete secure in-app payments. The app provides a smooth, user-friendly interface optimized for mobile devices and supports role-based access for customers, delivery agents, and admins.",
-      technologies: ["React Native (Expo)","TypeScript", "Firebase", "Razorpay"],
+      technologies: ["React Native", "Expo","TypeScript", "Firebase", "Razorpay"],
       image: "/projects/mrdhobi.webp",
       category: "mobile",
       githubLink: "https://github.com/Omkumar7Parmar/Mr.Dhobi-otp-payment",  

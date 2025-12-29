@@ -114,10 +114,10 @@ function Contact() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Connect With Me</h3>
               <div className="flex space-x-4">
-                <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-purple-500 rounded-full flex items-center justify-center transition-colors duration-300">
+                <a href="https://www.linkedin.com/in/mitul-patil-471456256/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gray-800 hover:bg-purple-500 rounded-full flex items-center justify-center transition-colors duration-300">
                   <FaLinkedin className="text-white text-xl" />
                 </a>
-                <a href="#" className="w-12 h-12 bg-gray-800 hover:bg-purple-500 rounded-full flex items-center justify-center transition-colors duration-300">
+                <a href="https://github.com/MitulPatil" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-gray-800 hover:bg-purple-500 rounded-full flex items-center justify-center transition-colors duration-300">
                   <FaGithub className="text-white text-xl" />
                 </a>
               </div>
