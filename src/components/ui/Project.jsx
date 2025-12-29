@@ -53,12 +53,16 @@ function Project({ title = "title", details, image, githubLink, projectLink, tec
         
         {/* Links Section */}
         <div className='flex items-center gap-3'>
-          <div className=" h-6 cursor-pointer">
-            <PiLinkSimpleBold onClick={() => window.open(projectLink, "_blank")} style={{ fontSize: '20px' }}/>
-          </div>
-          <div className='w-6 h-6 cursor-pointer' style={{ fontSize: '20px' }}>
-            <SiGithub onClick={() => window.open(githubLink, "_blank")} />
-          </div>
+          {projectLink && (
+            <div className="h-6 cursor-pointer">
+              <PiLinkSimpleBold onClick={() => window.open(projectLink, "_blank")} style={{ fontSize: '20px' }}/>
+            </div>
+          )}
+          {githubLink && (
+            <div className='w-6 h-6 cursor-pointer' style={{ fontSize: '20px' }}>
+              <SiGithub onClick={() => window.open(githubLink, "_blank")} />
+            </div>
+          )}
         </div>
       </div>
     </div>

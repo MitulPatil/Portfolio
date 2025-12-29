@@ -8,7 +8,7 @@ function Projects() {
     {
       id: 1,
       title: "Mr.Dhobi - Laundry Service",
-      details: "Mr. Dhobi is a modern on-demand laundry solution designed to streamline the entire workflow—from booking and pickup to delivery and payment—using real-time data synchronization and a centralized admin dashboard.",
+      details: "Mr. Dhobi is a mobile laundry service application designed for Android and iOS that allows users to schedule laundry pickups, track orders in real time, and complete secure in-app payments. The app provides a smooth, user-friendly interface optimized for mobile devices and supports role-based access for customers, delivery agents, and admins.",
       technologies: ["React Native (Expo)","TypeScript", "Firebase", "Razorpay"],
       image: "/projects/mrdhobi.webp",
       githubLink: "https://github.com/Omkumar7Parmar/Mr.Dhobi-otp-payment",  
@@ -16,12 +16,12 @@ function Projects() {
     },
     {
       id: 2,
-      title: "Real-time Chat App",
-      details: "This is a web application that enables users to engage in real-time text-based chat and initiate peer-to-peer 1-on-1 video calls. The application is built with Node.js, Express, and utilizes WebSockets (via Socket.IO) for real-time communication and WebRTC for direct video streaming between users.",
-      technologies: ["React", "Node.js", "Express", "Socket.IO", "WebRTC", "Tailwind CSS"],
+      title: "Car Rental",
+      details: "Full-stack car rental platform with dual interfaces for car owners and customers. Built using React, Node.js, Express, and MongoDB with JWT authentication. Features include car listing management, real-time availability checking, booking system, owner dashboard with analytics, and ImageKit integration for optimized image uploads.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "REST API", "ImageKit"],
       image: "/projects/chatapp.webp",
-      githubLink: "https://github.com/MitulPatil/ChatApp",  
-      projectLink: "https://webrtc-chatapp.onrender.com/"
+      githubLink: "https://github.com/MitulPatil/CarRental",  
+      projectLink: "https://car-rental-nine-liard.vercel.app/"
     },
   ]
 

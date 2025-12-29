@@ -15,58 +15,62 @@ function AllProjects() {
   const projectData = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      details: "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product catalog, shopping cart, and payment integration.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&auto=format&fit=crop&q=60",
-      category: "fullstack",
-      githubLink: "https://github.com/MitulPatil/ChatApp",  
-      projectLink: "https://webrtc-chatapp.onrender.com/"
+      title: "Mr.Dhobi - Laundry Service",
+      details: "Mr. Dhobi is a mobile laundry service application designed for Android and iOS that allows users to schedule laundry pickups, track orders in real time, and complete secure in-app payments. The app provides a smooth, user-friendly interface optimized for mobile devices and supports role-based access for customers, delivery agents, and admins.",
+      technologies: ["React Native (Expo)","TypeScript", "Firebase", "Razorpay"],
+      image: "/projects/mrdhobi.webp",
+      category: "mobile",
+      githubLink: "https://github.com/Omkumar7Parmar/Mr.Dhobi-otp-payment",  
+      projectLink: "https://play.google.com/store/apps/details?id=com.omkumar_78.mrdhobi&pcampaignid=web_share",
     },
     {
       id: 2,
-      title: "Social Media Dashboard",
-      details: "An analytics dashboard for social media management with real-time data visualization, post scheduling, and engagement tracking. Built with React and Chart.js.",
-      image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=400&auto=format&fit=crop&q=60",
-      category: "frontend",
-      githubLink: "https://github.com/MitulPatil/ChatApp",  
-      projectLink: "https://webrtc-chatapp.onrender.com/"
+      title: "Car Rental",
+      details: "Full-stack car rental platform with dual interfaces for car owners and customers. Built using React, Node.js, Express, and MongoDB with JWT authentication. Features include car listing management, real-time availability checking, booking system, owner dashboard with analytics, and ImageKit integration for optimized image uploads.",
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "JWT", "REST API", "ImageKit"],
+      image: "/projects/carrental.webp",
+      category: "fullstack",
+      githubLink: "https://github.com/MitulPatil/CarRental",  
+      projectLink: "https://car-rental-nine-liard.vercel.app/"
     },
     {
       id: 3,
-      title: "Task Management App",
-      details: "A collaborative task management application with drag-and-drop functionality, team collaboration features, and real-time updates using Socket.io.",
-      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=400&auto=format&fit=crop&q=60",
+      title: "Real-time Chat App",
+      details: "This is a web application that enables users to engage in real-time text-based chat and initiate peer-to-peer 1-on-1 video calls. The application is built with Node.js, Express, and utilizes WebSockets (via Socket.IO) for real-time communication and WebRTC for direct video streaming between users.",
+      technologies: ["React", "Node.js", "Express", "Socket.IO", "WebRTC", "Tailwind CSS"],
+      image: "/projects/chatapp.webp",
       category: "fullstack",
       githubLink: "https://github.com/MitulPatil/ChatApp",  
       projectLink: "https://webrtc-chatapp.onrender.com/"
     },
     {
       id: 4,
-      title: "Weather Forecast App",
-      details: "A responsive weather application with location-based forecasts, interactive maps, and historical weather data. Integrated with OpenWeather API.",
-      image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&auto=format&fit=crop&q=60",
-      category: "frontend",
-      githubLink: "https://github.com/MitulPatil/ChatApp",  
-      projectLink: "https://webrtc-chatapp.onrender.com/"
+      title: "YouTube-Notes-Quiz-Generator",
+      details: "Built an AI-powered web app converting YouTube lectures into interactive quizzes using Python, Streamlit, and Google Gemini LLM. Features automated transcript extraction, AI-generated notes with PDF export, 50+ quiz questions per video, performance analytics, and API fallback mechanisms for reliability.",
+      technologies: ["Python","Streamlit","Google Gemini API","LiteLLM","YouTube Transcript API","ReportLab"],
+      image: "/projects/youtube_quize.webp",
+      category: "ai",
+      githubLink: "https://github.com/MitulPatil/YouTube-Notes-Quiz-Generator",  
     },
     {
       id: 5,
       title: "Portfolio Website",
-      details: "A modern portfolio website with smooth animations using GSAP, responsive design, and optimized performance. Built with React and Tailwind CSS.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&auto=format&fit=crop&q=60",
+      details: "A modern, responsive portfolio website showcasing my full-stack development skills. Built with React, GSAP animations, and Tailwind CSS, featuring smooth transitions and optimized performance.",
+      technologies:["React", "Vite", "Tailwind CSS", "GSAP", "React Router", "React Icons"],
+      image: "/projects/portfolio.webp",
       category: "frontend",
-      githubLink: "https://github.com/MitulPatil/ChatApp",  
+      githubLink: "hhttps://github.com/MitulPatil/Portfolio",  
       projectLink: "https://webrtc-chatapp.onrender.com/"
     },
     {
       id: 6,
-      title: "Mr.Dhobi - Laundry Service",
-      details: "Mr. Dhobi is a modern on-demand laundry solution designed to streamline the entire workflow—from booking and pickup to delivery and payment—using real-time data synchronization and a centralized admin dashboard.",
-      technologies: ["React Native (Expo)","TypeScript", "Firebase", "Razorpay"],
-      image: "/projects/mrdhobi.webp",
-      githubLink: "https://github.com/Omkumar7Parmar/Mr.Dhobi-otp-payment",  
-      projectLink: "https://play.google.com/store/apps/details?id=com.omkumar_78.mrdhobi&pcampaignid=web_share",
-      category: "mobile",
+      title: "Mr.Dhobi - info Site",
+      details: "Built a modern, mobile-responsive landing page for MrDhobi, a premium laundry service platform. Implemented interactive components including pricing modals, policy viewers, FAQ accordions, and service cards using React and Tailwind CSS.",
+      technologies: ["React", "Vite", "Tailwind CSS", "Framer Motion", "GSAP"],
+      image: "/projects/mrdhobi_info.webp",
+      category: "frontend",
+      githubLink: "https://github.com/Omkumar7Parmar/MrDhobi-Info",  
+      projectLink: "https://www.mrdhobi.in/",
     }
   ]
 
@@ -140,7 +144,10 @@ function AllProjects() {
                 details={project.details}
                 image={project.image}
                 links={project.links}
-              />
+                githubLink={project.githubLink}
+                projectLink={project.projectLink}
+                technologies={project.technologies || []}   
+              />   
             ))
           ) : (
             <div className='col-span-full text-center py-16'>

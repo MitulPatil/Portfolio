@@ -102,8 +102,8 @@ function Navbar({ noAnimation = false }) {
 
                     {/* Social Links */}
                     <div className='absolute bottom-10 flex space-x-8 text-sm'>
-                        <a href="#" className='hover:text-gray-200 transition-colors'>LinkedIn</a>
-                        <a href="#" className='hover:text-gray-200 transition-colors'>Github</a>
+                        <a href="https://www.linkedin.com/in/mitul-patil-471456256/" target="_blank" rel="noopener noreferrer" className='hover:text-gray-200 transition-colors'>LinkedIn</a>
+                        <a href="https://github.com/MitulPatil" target="_blank" rel="noopener noreferrer"  className='hover:text-gray-200 transition-colors'>Github</a>
                     </div>
                 </div>
             </div>
