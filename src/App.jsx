@@ -2,9 +2,9 @@ import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Lazy load pages for better performance
-const MainPage = lazy(() => import('./Pages/MainPage'))
-const AllProjects = lazy(() => import('./Pages/AllProjects'))
-const AboutPage = lazy(() => import('./Pages/AboutPage'))
+const MainPage = lazy(() => import('./pages/MainPage'))
+const AllProjects = lazy(() => import('./pages/AllProjects'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
 
 const App = () => {
   return (
