@@ -60,7 +60,7 @@ function AllProjects() {
       image: "/projects/portfolio.webp",
       category: "frontend",
       githubLink: "hhttps://github.com/MitulPatil/Portfolio",  
-      projectLink: "https://webrtc-chatapp.onrender.com/"
+      projectLink: "https://www.mitulpatil.me/"
     },
     {
       id: 6,
