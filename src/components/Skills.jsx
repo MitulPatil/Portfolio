@@ -2,7 +2,7 @@ import React from 'react'
 import SkillItem from './ui/SkillItem'
 
 function Skills() {
-  const skills = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODEJS", "MONGODB", "EXPRESSJS", "POSTMAN", "GSAP", "CSS-ANIMATION", 'SCROLL-TRIGGER','python', 'TAILWIND CSS','GIT', 'GITHUB','LLM INTEGRATION']
+  const skills = ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODEJS", "MONGODB", "EXPRESSJS", "POSTMAN", "GSAP", "CSS-ANIMATION", 'SCROLL-TRIGGER','PYTHON', 'TAILWIND CSS','GIT', 'GITHUB','LLM INTEGRATION']
   
   return (
     <div className='bg-black text-white py-12 sm:py-16 md:py-20 overflow-hidden'>
