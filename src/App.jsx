@@ -1,6 +1,7 @@
 import React, { lazy, Suspense, useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import ReactGA from 'react-ga4'
+import TechCursor from './components/nurui/tech-cursor'
 
 // Lazy load pages for better performance
 const MainPage = lazy(() => import('./pages/MainPage'))
@@ -22,6 +23,7 @@ const App = () => {
   return (
     <Router>
       <Analytics />
+      <TechCursor />
       <Suspense fallback={
         <div className="flex items-center justify-center min-h-screen bg-black text-white">
           <div className="text-xl">Loading...</div>
